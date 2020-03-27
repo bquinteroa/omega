@@ -1,0 +1,78 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+header {
+  padding: 156px 0 100px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.position-fixed{
+  position: fixed;
+  min-height: 12px;
+  width: 20px;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: aquamarine;
+}
+
+section {
+  padding: 150px 0;
+}
+
+h1 { 
+  text-transform: uppercase;
+}
+
+h2 { 
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 { 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+}
+
+h4 { 
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: large;
+  text-align: left;
+}
+/* -----------------------TABLAS ------------------------------ */
+table{
+  table-layout: fixed;
+  width: auto;
+}
+
+th, td {
+  width: auto;
+  word-wrap: break-word;
+  color: rgb(13, 5, 61);
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-mcqj{font-weight:bold;border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-1tol{font-weight:bold;border-color:#000000;text-align:left;vertical-align:middle}
+.tg .tg-12k0{text-decoration:underline;border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-cly1{text-align:left;vertical-align:middle;}
+/* ---------------------------- ------------------------------ */
+
+/* -----------------------IMAGENES ------------------------------ */
+
+.resize_fit_center {
+  max-width:70%;
+  max-height:70%;
+  vertical-align: middle;
+  text-align: center;
+}
+/* ---------------------------- ------------------------------ */
