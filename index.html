@@ -117,6 +117,17 @@
                             <ul>
                                 <li>24 h</li>
                             </ul>
+                            <h3>Potencia térmica en LED y Driver</h3>
+                            <h4>Board</h4>
+                            <p> La potencia térmica de los LEDs depende de los materiales utilizados por el fabricante en su construcción. Solo el fabricante conoce su valor, sin embargo, puede aproximarse como una función de la potencia eléctrica de salida del Driver, P<sub>Out</sub>. La potencia térmica de los LEDs es estimada como:</p>
+                            <p>P<sub>LED</sub> = E<sub>L-C</sub> P<sub>Out</sub></p>
+                            <p>Donde E<sub>L-C</sub> es la eficiencia de conversion luz a calor.</p>
+                            <p>En este caso fue asumida E<sub>L-C</sub> = 0.65, el cual es un valor aproximado para la eficiencia de los LED fabricados por Philips.</p>
+
+                            <h4>Driver</h4>
+                            <p>Si es conocida la eficiencia electrica del Driver, E<sub>D</sub>,  la potencia térmica sera:</p>
+                            <p>P<sub>Driver</sub> = E<sub>D</sub> P<sub>Out</sub></p>                           
+
                         </div>
                     </div>
                 </div>
@@ -143,7 +154,7 @@
                                 <tr>
                                     <td class="tg-mcqj" colspan="2">Temperatura ambiente [ºC]<br></td>
                                     <td class="tg-wp8o" colspan="4">35</td>
-                                </tr>                                
+                                </tr>
                                 <tr>
                                     <td class="tg-mcqj" rowspan="2">Dominios</td>
                                     <td class="tg-73oq">Fluido</td>
@@ -229,48 +240,28 @@
                             <table class="tg">
                                 <tr>
                                     <td class="tg-mcqj" rowspan="2" colspan="2">Módulo 1<br></td>
-                                    <td class="tg-wp8o" rowspan="2" colspan="2">Fortimo FastFlex LED 2x8/840 DA G4</td>
-                                    <td class="tg-73oq">Potencia modulo Led [W]</td>
-                                    <td class="tg-73oq">51</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-73oq" >Potencia Térmica Led [W]<br></td>
-                                    <td class="tg-73oq">40</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-mcqj" rowspan="2" colspan="2">Módulo 2<br></td>
                                     <td class="tg-wp8o" rowspan="2" colspan="2">FastFlex VO 4x16 </td>
                                     <td class="tg-73oq">Potencia modulo Led [W]</td>
                                     <td class="tg-73oq">57</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-73oq" >Potencia Térmica Led [W]<br></td>
+                                    <td class="tg-73oq">Potencia Térmica Led [W]<br></td>
                                     <td class="tg-73oq">37</td>
                                 </tr>
-                            </table>                            
+                            </table>
                             <h3>Drivers</h3>
                             <table class="tg">
                                 <tr>
                                     <td class="tg-mcqj" rowspan="2" colspan="2">Driver 1<br></td>
-                                    <td class="tg-wp8o" rowspan="2" colspan="2">Xitanium Outdoor</td>
-                                    <td class="tg-73oq">Potencia Driver [W]</td>
-                                    <td class="tg-73oq">130 [Máx].</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-73oq" >Potencia Térmica Driver [W]<br></td>
-                                    <td class="tg-73oq">12</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-mcqj" rowspan="2" colspan="2">Driver 2<br></td>
                                     <td class="tg-wp8o" rowspan="2" colspan="2">CertaDrive L</td>
                                     <td class="tg-73oq">Potencia Driver [W]</td>
                                     <td class="tg-73oq">57</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-73oq" >Potencia Térmica Driver [W]<br></td>
+                                    <td class="tg-73oq">Potencia Térmica Driver [W]<br></td>
                                     <td class="tg-73oq">7.41</td>
                                 </tr>
-                            </table>   
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -292,14 +283,14 @@
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">LED Modulo</td>
-                                    <td class="tg-0pky">Fortimo FastFlex LED 2x8/840 DA G4</td>
+                                    <td class="tg-0pky">FastFlex VO 4x16</td>
                                     <td class="tg-0pky">FastFlex VO 4x16</td>
                                     <td class="tg-0pky">FastFlex VO 4x16</td>
                                     <td class="tg-0pky">FastFlex VO 4x16</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">LED Driver</td>
-                                    <td class="tg-0pky">Xitanium 130W (Max.)<sup>&#8224</sup></td>
+                                    <td class="tg-0pky">CertaDrive L 57 W</td>
                                     <td class="tg-0pky">CertaDrive L 57 W</td>
                                     <td class="tg-0pky">CertaDrive L 57 W</td>
                                     <td class="tg-0pky">CertaDrive L 57 W</td>
@@ -307,72 +298,86 @@
                                 <tr>
                                     <td class="tg-0pky">I LED [mA]</td>
                                     <td class="tg-0pky">1050</td>
-                                    <td class="tg-0pky">950</td>
-                                    <td class="tg-0pky">1200</td>
-                                    <td class="tg-0pky">1900</td>
+                                    <td class="tg-0pky">1050</td>
+                                    <td class="tg-0pky">1050</td>
+                                    <td class="tg-0pky">1050</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">Voltage [V]</td>
-                                    <td class="tg-0pky">48.6</td>
-                                    <td class="tg-0pky">48.4</td>
-                                    <td class="tg-0pky">48.4</td>
-                                    <td class="tg-0pky">48.4</td>
+                                    <td class="tg-0pky">54</td>
+                                    <td class="tg-0pky">54</td>
+                                    <td class="tg-0pky">54</td>
+                                    <td class="tg-0pky">54</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-0pky">T<sub>amb.</sub> [ºC]</td>
+                                    <td class="tg-0pky">25</td>
+                                    <td class="tg-0pky">35</td>
+                                    <td class="tg-0pky">40</td>
+                                    <td class="tg-0pky">50</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">Tc lifetime FastFlex [ºC]<sup>&#8225</sup></td>
-                                    <td class="tg-0pky">80</td>
-                                    <td class="tg-0pky">75</td>
-                                    <td class="tg-0pky">75</td>
-                                    <td class="tg-0pky">75</td>
+                                    <td class="tg-0pky">90</td>
+                                    <td class="tg-0pky">90</td>
+                                    <td class="tg-0pky">90</td>
+                                    <td class="tg-0pky">90</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-0pky">Tc Lifetime B50L70 [ºC]</td>
+                                    <td class="tg-0pky" colspan="4">75</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">P<sub>LED</sub> [W]</td>
-                                    <td class="tg-0pky">51</td>
-                                    <td class="tg-0pky">46</td>
-                                    <td class="tg-0pky">58</td>
-                                    <td class="tg-0pky">92</td>
+                                    <td class="tg-0pky">57</td>
+                                    <td class="tg-0pky">57</td>
+                                    <td class="tg-0pky">57</td>
+                                    <td class="tg-0pky">57</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">P<sub>Th</sub> [W]<sup>&times</sup></td>
-                                    <td class="tg-0pky">40</td>
-                                    <td class="tg-0pky">30</td>
                                     <td class="tg-0pky">37</td>
-                                    <td class="tg-0pky">60</td>
-                                    
+                                    <td class="tg-0pky">37</td>
+                                    <td class="tg-0pky">37</td>
+                                    <td class="tg-0pky">37</td>
+
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">Eff. LED Modulo [lm/W]</td>
-                                    <td class="tg-0pky">109</td>
-                                    <td class="tg-0pky" colspan="3">>115</td>
+                                    <td class="tg-0pky" colspan="4">>115</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">LED Flujo Modulo [lm]</td>
-                                    <td class="tg-0pky">5546</td>
-                                    <td class="tg-0pky" colspan="3">>5000</td>
+                                    <td class="tg-0pky" colspan="4">>5000</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">P<sub>DRIVER</sub> [W]</td>
-                                    <td class="tg-0pky">51</td>
-                                    <td class="tg-0pky">46</td>
-                                    <td class="tg-0pky">58</td>
-                                    <td class="tg-0pky">92</td>
+                                    <td class="tg-0pky">57</td>
+                                    <td class="tg-0pky">57</td>
+                                    <td class="tg-0pky">57</td>
+                                    <td class="tg-0pky">57</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">P<sub>Th</sub> [W]<sup>&gt;</sup></td>
-                                    <td class="tg-0pky">12</td>
-                                    <td class="tg-0pky">6</td>
                                     <td class="tg-0pky">7.41</td>
-                                    <td class="tg-0pky">12</td>
+                                    <td class="tg-0pky">7.41</td>
+                                    <td class="tg-0pky">7.41</td>
+                                    <td class="tg-0pky">7.41</td>
                                 </tr>
                                 <tr>
                                     <td class="tg-0pky">Tc lifetime Driver [ºC]</td>
                                     <td class="tg-0pky">80</td>
-                                    <td class="tg-0pky">70</td>
-                                    <td class="tg-0pky">70</td>
-                                    <td class="tg-0pky">70</td>
+                                    <td class="tg-0pky">80</td>
+                                    <td class="tg-0pky">80</td>
+                                    <td class="tg-0pky">80</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-73oq" colspan="5"> <sup>&#8224</sup> Potencia máxima asumida para el Driver. Driver no existe en la base de productos de Philips&reg ;<sup>&#8225</sup><a href="https://www.easydesignintool.philips.com/calculate-module/?eoc=871869672494100&voltagetype=1">www.easydesignintool.com</a>; <sup>&times</sup> Eficiencia conversión Luz-Calor: 65%;<sup>&gt</sup> Eficiencia eléctrica : 87%</td>
+                                    <td class="tg-73oq" colspan="5"> <sup>&#8224</sup> Potencia máxima asumida para el
+                                        Driver. Driver no existe en la base de productos de Philips&reg
+                                        ;<sup>&#8225</sup><a
+                                            href="https://www.easydesignintool.philips.com/calculate-module/?eoc=871869672494100&voltagetype=1">www.easydesignintool.com</a>;
+                                        <sup>&times</sup> Eficiencia conversión Luz-Calor: 65%;<sup>&gt</sup> Eficiencia
+                                        eléctrica : 87%</td>
                                 </tr>
                             </table>
                         </div>
@@ -491,9 +496,15 @@
                             <h4>T<sub>c</sub> Board</h4>
                             <p>Es la temperatura utilizada para definir la vida util de los módulos LED. Sus unidades
                                 son ºC.</p>
+                            <p>Para determinar esta temperatura fue utilizada la curva de resistencia térmica de la
+                                Board.
+                            </p>
+                            <img src="img/resitenciaBoard.png" alt="">
+                            <h4>Puntos de medición</h4>
                             <img class="resize_fit_center img-circle" src="img/view4m.png" class="img-circle">
-                            <h4>Temperaturas T<sub>c</sub> en los componentes de la luminaria: Board y Driver</h4>
-                            <h5>Board</h5>
+                            <h4>Simulaciones T<sub>amb.</sub> = 35 ºC y Potencia Variable </h4>
+                            <h5>Temperaturas T<sub>c</sub> en los componentes Board y Driver.</h5>
+                            <h6>Board</h6>
                             <p>La temperatura:</p>
                             <table class="tg">
                                 <tr>
@@ -527,9 +538,7 @@
                                     <td class="tg-0lax">101</td>
                                 </tr>
                             </table>
-                            Para determinar esta temperatura fue utilizada la curva de resistencia térmica de la Board.
-                            <img src="img/resitenciaBoard.png" alt="">
-                            <h5>Driver</h5>
+                            <h6>Driver</h6>
                             <p>La temperatura:</p>
                             <table class="tg">
                                 <tr>
@@ -565,11 +574,96 @@
                             </table>
 
                             <h4>Comparaciones temperaturas</h4>
-                            
-                            <h5>Simulación 1</h5><img class="resize_fit_center img-circle" src="img/res/comparacionC3.png" alt="" srcset="" >
-                            <h5>Simulación 2</h5><img class="resize_fit_center img-circle" src="img/res/comparacionC1.png" alt="" srcset="">
-                            <h5>Simulación 3</h5><img class="resize_fit_center img-circle" src="img/res/comparacionC2.png" alt="" srcset="">
-                            <h5>Simulación 4</h5><img class="resize_fit_center img-circle" src="img/res/comparacionC4.png" alt="" srcset="">
+
+                            <h5>Simulación 1</h5><img class="resize_fit_center img-circle"
+                                src="img/res/comparacionC3.png" alt="" srcset="">
+                            <h5>Simulación 2</h5><img class="resize_fit_center img-circle"
+                                src="img/res/comparacionC1.png" alt="" srcset="">
+                            <h5>Simulación 3</h5><img class="resize_fit_center img-circle"
+                                src="img/res/comparacionC2.png" alt="" srcset="">
+                            <h5>Simulación 4</h5><img class="resize_fit_center img-circle"
+                                src="img/res/comparacionC4.png" alt="" srcset="">
+
+                            <h4>Simulaciones T<sub>amb.</sub> variable y Potencia de Salida = 57 [W] </h4>
+                            <h5>Temperaturas T<sub>c</sub> en los componentes Board y Driver.</h5>
+                            <table class="tg">
+                                <tr>
+                                  <th class="tg-fymr">Potencia [W]</th>
+                                  <th class="tg-fymr">57</th>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">LED Modulo</td>
+                                  <td class="tg-0pky">Fortimo FastFlex 4X16 VO</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">LED Driver</td>
+                                  <td class="tg-0pky">CertaDrive L 57 [W]</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">I LED [mA]</td>
+                                  <td class="tg-0pky">1050</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">Voltage [V]</td>
+                                  <td class="tg-0pky">54</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">PTh LED [W]</td>
+                                  <td class="tg-0pky">37</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">PTh [W]</td>
+                                  <td class="tg-0pky">7.4</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-fymr" colspan="2">Resultados de Simulación de Tc para módulos </td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0pky">Tc Life Modulo [ºC]</td>
+                                  <td class="tg-73oq">90</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc LED module 25 ºC [ºC]</td>
+                                  <td class="tg-0lax">71</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-73oq">Tc LED module 35 ºC [ºC]</td>
+                                  <td class="tg-73oq">81</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc LED module 40 ºC [ºC]</td>
+                                  <td class="tg-0lax">85</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-73oq">Tc LED module 50 ºC [ºC]</td>
+                                  <td class="tg-73oq">95</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-1wig" colspan="2">Resultados de Simulación de Tc para Driver</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc Life Driver [ºC]</td>
+                                  <td class="tg-0lax">80</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc LED <span style="font-weight:400;font-style:normal">Driver</span> 25 ºC [ºC]</td>
+                                  <td class="tg-0lax">47</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc LED <span style="font-weight:400;font-style:normal">Driver</span> 35 ºC [ºC]</td>
+                                  <td class="tg-0lax">57</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc LED <span style="font-weight:400;font-style:normal">Driver</span> 40 ºC [ºC]</td>
+                                  <td class="tg-0lax">62</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-0lax">Tc LED <span style="font-weight:400;font-style:normal">Driver</span> 50 ºC [ºC]</td>
+                                  <td class="tg-0lax">71</td>
+                                </tr>
+                            </table>
+                            <h5>Curva Potencia - Temperatura</h5>
+                            <img class="resize_fit_center img-circle" src="img/res/potenciaTemp.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -580,7 +674,8 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <h2>Análisis Térmico</h2>
-                            <p class="lead">A continuación las distribuciones de temperaturas experimentadas por OMEGA para la Simulación 1</p>
+                            <p class="lead">A continuación las distribuciones de temperaturas experimentadas por OMEGA
+                                para la Simulación 1</p>
                             <h3>distribuciones de temperatura</h3>
                             <h4>Generales</h4>
                             <img class="resize_fit_center img-circle" src="img/res/view1.png" alt="" srcset="">
@@ -644,7 +739,12 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <h2>Conclusiones</h2>
-                            <p class="lead">Ninguno de los componentes experimenta una temperatura mayor a T<sub>c</sub>. En la condición de operación en la simulación 3, P = 58 [W], la BOARD llega a experimentar una temperatura hasta de 80 [ºC] Temperaturas que es 10 [ºC] menor a la de garantía. Sin embargo después de 50.000.0 horas de trabajo la potencia lumínica caerá por debajo del 70% por tener una temperatura Tc > 75 [ºC]. Es recomendable reducir el voltaje para mantener la clasificación B50L70 de los LEDs y los FastFlex VO 4X16.
+                            <p class="lead">Ninguno de los componentes experimenta una temperatura mayor a
+                                T<sub>c</sub>. En la condición de operación en la simulación 3, P = 58 [W], la BOARD
+                                llega a experimentar una temperatura hasta de 80 [ºC] Temperaturas que es 10 [ºC] menor
+                                a la de garantía. Sin embargo después de 50.000.0 horas de trabajo la potencia lumínica
+                                caerá por debajo del 70% por tener una temperatura Tc > 75 [ºC]. Es recomendable reducir
+                                el voltaje para mantener la clasificación B50L70 de los LEDs y los FastFlex VO 4X16.
                             </p>
                         </div>
                     </div>
